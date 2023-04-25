@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+<style>
+fieldset {
+	padding: 50px;
+	width: 380px;
+	height: 380px;
+	display: inline-block;
+}
+
+.a {
+	float: right;
+}
+
+label {
+	font-size: 20px;
+	font-weight: 500;
+	float: left;
+}
+
+body {
+	color: white;
+	background-image: url(vi1.gif);
+}
+
+legend {
+	border: none;
+	font-size: 30px;
+	/* border: 2px solid green; */
+	border-radius: 6px;
+	background-color: rgba(99, 224, 247, 0.281);
+	color: aliceblue;
+}
+</style>
+
+<title>Document</title>
+</head>
+<body>
+	<form action="register" method="post" enctype="multipart/form-data"
+		style="margin-top: 4%; margin-left: 5%;">
+
+		<fieldset>
+			<legend>Register Here:</legend>
+			<label for="fname">First Name:</label> <input type="text"
+				name="fname" class="a">
+				 <br> <br> <label for="lname">Last Name:</label> <input type="text" class="a"
+				name="lname"> 
+				<br> <br> <label for="dob">Date-of-birth:</label>
+			<input class="a" type="text" name="dob"> 
+			<br> <br>
+			<label for="gender">Gender:</label> <input class="a" type="text" name="gender"> 
+				<br> <br> <label for="email">Email:</label>	<input class="a" type="text" name="email" id=""> 
+				<br> <br>
+			<label for="pass">Password:</label> <input class="a" type="text" name="pass">
+				 <br> <br> <label for="mobile">Mobile:</label>
+			<input class="a" type="text" name="mobile"> 
+			<br> <br>
+			<br> <br> 
+			<input style="float: left;" type="file" name="image"> <input
+				style="float: right;" type="submit" value="Register">
+		</fieldset>
+	</form>
+
+</body>
+</html>
